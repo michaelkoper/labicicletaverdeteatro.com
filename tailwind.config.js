@@ -1,9 +1,12 @@
 module.exports = {
-  purge: [
-    './source/**/*.html',
-    './source/**/*.erb',
-    './build/**/*.html',
-  ],
+  purge: {
+    enabled: true,
+    content: [
+      './source/**/*.html',
+      './source/**/*.erb',
+      './build/**/*.html',
+    ],
+  },
   theme: {
     fontFamily: {
       display: ['Lato', 'sans-serif'],
